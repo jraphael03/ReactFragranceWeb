@@ -1,0 +1,36 @@
+npm init -                                             creates package.json (manifest) file, list dependencies
+npm install <package name> --save    install package locally (default) and add to package.json
+npm install <package name> -g           installs package globally (access anywhere) SUDO
+npm install <package name> --save-dev   use it only in development
+
+npx create-react-app (app-name)
+
+In new react folder
+Delete in src
+App.css
+App.test.js
+Logo.svg
+serviceWorker.js and/or reportWebVitals.js
+setUpTests.js
+
+Then remove the file imports from the index.js file in src so it will remove the errors
+
+
+Another way of starting react delete all files in src besides index.js, then completely clean the index.js file 
+
+Starting a new index.js
+import React from 'react';    //imports es6 modules
+import ReactDom from 'react-dom';
+
+
+function Greeting(){          //function name must have a capital letter
+  return <h4>This is Justin and this is my first component</h4>;
+}
+
+
+ReactDom.render(<Greeting />, document.getElementById('root'));         //render looks for two things, what you want to render, and where you want it to be rendered
+
+
+Creating  a css file
+Inside of src create a file, index.css
+Connect to index.js
